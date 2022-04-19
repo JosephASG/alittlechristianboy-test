@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/PrimalLogoPro.png">
+
+    <!-- Estilo de los botones-->
+    <link rel="stylesheet" href="css/glitch.css">
+    <link rel="stylesheet" href="css/sticky_section.css">
+    <link rel="stylesheet" href="css/skills.css">
+    <link rel="stylesheet" href="css/jarallax.css">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/footer_social_icons.css">
+    <link rel="stylesheet" href="css/animaciones.css">
+    <link rel="stylesheet" href="css/preloadera.css">
+    <link rel="stylesheet" href="css/colors.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/26b28607c6.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <style>
+        .containerX {
+            font-size: 5rem;
+            opacity: 1;
+            transform: none;
+        }
+
+        @media (min-width:460px) {
+            .containerX {
+                font-size: xx-large;
+            }
+        }
+    </style>
+
+    <!-- SCROLL REVEAL-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+
+    <title>Primal</title>
+
+</head>
+
+<body class="colorBlackP">
+
+    <div id="scrollPath"></div>
+    <div id="progressbar"></div>
+
+    <!------------------------------------------------------------Menu seleccion--------------------------------------------------------------------->
+
+    <section onclick="toggleMenu__();">
+        <div class="toggle__" style="margin-top: 40px;right: 40px;"></div>
+        <div class="sidebar__">
+            <ul class="sidebar__menu">
+                <li style="--clr:#ff0029">
+                    <a data-text="&nbsp;home" href="/" class="font__Josefin">
+                        &nbsp;Home&nbsp;
+                    </a>
+                </li>
+                <li style="--clr:#ff0019">
+                    <a data-text="&nbsp;skills" href="#skills" class="btn_open_skills font__Josefin"
+                        onclick="toggleMenu__skills();">
+                        &nbsp;Skills&nbsp;
+                    </a>
+                </li>
+                <li style="--clr:#ff0009">
+                    <a data-text="&nbsp;proyectos" href="projects" class="font__Josefin">
+                        &nbsp;Proyectos&nbsp;
+                    </a>
+                </li>
+                <li style="--clr:#D31027">
+                    <a data-text="&nbsp;contacto" href="#contact" class="font__Josefin">
+                        &nbsp;Contacto&nbsp;
+                    </a>
+                </li>
+                <li style="--clr:#dd1818">
+                    <a data-text="&nbsp;About" href="#about" class="font__Josefin">
+                        &nbsp;About&nbsp;
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <!------------------------------------------------------------Pantalla de carga de inicio--------------------------------------------------------------------->
+
+    <div class="loader-wrapper">
+        <div class="loader2" style="border-top-color: rgba(149, 144, 144, 0.46);"></div>
+
+        <div class="loader-section section-left"></div>
+        <div class="loader-section section-right"></div>
+
+    </div>
+    <!--<div class="contenedor_loader">
+        <div class="loader"></div>
+        
+      </div>-->
+
+    <!--------------------------------------------------------Navbar ------------------------------------------------------------------------->
+
+    <nav id="navbar_move" class="navbar navbar-expand-lg fixed-top" style="z-index: 4;">
+        <div class="container px-4">
+            <a class="navbar-brand" href="/">
+                <div class="col-sm-6">
+                    <img class="logo__hover" src="img/PrimalLogoLight48x48.png" alt="Primal Logo">
+                    <h5 class="d-inline-block">
+                        <div class="text-light rounded-0 ms-2 title__style__LS">Primal</div>
+                    </h5>
+                    <h6 class="d-inline-block">
+                        <span class="badge text-dark ms-2"
+                            title="Beta basicamente quiere decir que este sitio se caerá, y muchisimo. ademas que estara algo lento probablemente algunas veces"
+                            style="border-radius: 10px; background: #ffcc74;">Beta</span>
+                    </h6>
+                </div>
+            </a>
+        </div>
+    </nav>
+
+    <!--{% block content %}-->
+    <main>
+        <div id="wrap">
+            <div class="py-5 colorBlackP2">
+                <header class="mt-5" style="margin-left: 100px;">
+
+                </header>
+                <div class="container__cards title__style__LS">
+                    <div class="__card text-light skill__box">
+                        <div class="cover__card ">
+                            <a id='refer' href="">
+                                <img src="https://res.cloudinary.com/primalappsje/image/upload/v1648886043/primal/LogoLooper_zkleoq.png"
+                                    alt="">
+                            </a>
+                        </div>
+                        <h2>Looper</h2>
+                        <p>Esta aplicación tiene como objetivo automatizar el envío de multiples mensajes en una entrada
+                            de
+                            texto.</p>
+                        <hr>
+                        <div class="footer__card"></div>
+                        <h3 class="user__name"></h3>
+                        <i>tutorial</i>
+                    </div>
+                    <div class="__card text-light skill__box">
+                        <div class="cover__card">
+                            <img src="" alt="">
+                        </div>
+                        <h2>Próximamente</h2>
+                        <p>Desarrollo freelance de todo tipo de aplicaciones web, móviles y de escritorio.</p>
+                        <hr>
+                        <div class="footer__card"></div>
+                        <h3 class="user__name"></h3>
+                        <i>tutorial</i>
+                    </div>
+                    <div class="__card text-light skill__box">
+                        <div class="cover__card">
+                            <div class="cover__card">
+                                <img src="" alt="">
+                            </div>
+                            <h2>Próximamente</h2>
+                            <p>Desarrollo freelance de todo tipo de aplicaciones web, móviles y de escritorio.</p>
+                            <hr>
+                            <div class="footer__card"></div>
+                            <h3 class="user__name"></h3>
+                            <i>tutorial</i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <section class="colorBlackP mb-0">
+                <div class="container">
+                    <div class="text-white mb-1 fw-bold botonapps containerText" style="font-size: 3.7rem;"
+                        id="text__p__3">
+                        <div class="letras__primal__s" style="z-index: 1;" id="wrap">
+                            <p>El que tiene mis mandamientos, y los guarda, ese es el que me ama; y el que me ama, será
+                                amado por mi Padre, y yo le amaré, y me manifestaré a él.</p>
+                            <span>-Juan 14:21</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+    <!--{% endblock %}-->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content bg-dark" style="border-radius: 10px;">
+                <div class="modal-body">
+                    <div class="d-flex justify-content-between">
+                        <h2 class="h5 mb-2 fw-bold modal-title text-light" id="exampleModalLabel">Busca aplicaciones
+                        </h2>
+                        <button type="button" class="btn-close btn btn-warning btn-close-white text-reset shadow-none"
+                            data-bs-dismiss="modal" aria-label="Close">
+                        </button>
+                    </div>
+                    <div>
+                        <div class="d-flex flex-start mb-3">
+                        </div>
+                        <form class="d-flex mb-3">
+                            <input id="search" type="text"
+                                class="form-control p-2 text-center text-light border-0 shadow-none"
+                                placeholder="Buscar Contenido 🔍" autocomplete="false" required="" value=""
+                                style="background: rgb(48, 48, 48); border-radius: 10px;">
+                            <button class="btn btn-primary ms-2 d-flex align-items-center" style="border-radius: 10px;"
+                                type="submit" disabled="">Buscar</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div>
+        <footer class="colorBlackP" id="contact">
+            <div class="py-5">
+                <img src="img/LogoToAnimateWhite.png" alt="" class="logoPrimal">
+            </div>
+            <div class="footer__contacts">
+                <div class="footer__contacts__d">
+                    <a class="">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                </div>
+                <div class="footer__contacts__d">
+                    <a class="">
+                        <i class="fa-brands fa-twitter"></i>
+                    </a>
+                </div>
+                <div class="footer__contacts__d">
+                    <a class="">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                </div>
+                <div class="footer__contacts__d">
+                    <a class="">
+                        <i class="fa-brands fa-reddit"></i>
+                    </a>
+                </div>
+                <div class="footer__contacts__d">
+                    <a class="">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+                </div>
+            </div>
+            <nav id="nav__footer" class="container border-bottom py-3 mb-3">
+                <a href="#">Home</a>
+                <a href="#skills" onclick="toggleMenu__skills();">Skills</a>
+                <a>Contacto</a>
+                <a href="#about">Acerca de</a>
+            </nav>
+            <div>
+                <div class="container">
+                    <div class="row py-4">
+                        <p class="text-center text-muted mt-0 section__skills">© 2022 Primal, Inc</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script type="module" src="js/firebase-primal.js"></script>
+    <script type="application/javascript" src="js/preloader.js"></script>
+    <script type="text/javascript" src="js/menu.js"></script>
+    <script type="text/javascript" src="js/jarallax.js"></script>
+    <script type="text/javascript" src="js/jarallax-element.js"></script>
+    <script type="text/javascript" src="js/vanilla-tilt.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.3/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.3/ScrollTrigger.min.js"></script>
+
+    <script>
+        let progress = document.getElementById('progressbar');
+        let totalHeight = document.body.scrollHeight - window.innerHeight;
+        window.onscroll = function () {
+            let progressHeight = (window.pageYOffset / totalHeight) * 100;
+            progress.style.height = progressHeight + "%";
+        }
+    </script>
+
+    <script>
+        jarallax(document.querySelectorAll('.jarallax'), {
+            speed: 0.5,
+        });
+    </script>
+
+    <script>
+        VanillaTilt.init(document.querySelectorAll(".skill__box"), {
+            max: 25,
+            speed: 400,
+            glare: true,
+            "max-glare": 1,
+        });
+    </script>
+
+    <script>
+        const cursor = document.querySelector('.cursor');
+        document.addEventListener('mousemove', (e) => {
+            cursor.style.left = e.pageX + 'px';
+            cursor.style.top = e.pageY + 'px';
+        })
+    </script>
+
+    <script>
+        var typed = new Typed(".auto_type", {
+            strings: ["Software", "Development", "Apprentice"
+            ],
+            typeSpeed: 60,
+            backSpeed: 60,
+            loop: true
+        })
+    </script>
+    <script>
+        function toggleMenu__() {
+            const menutoggle = document.querySelector(".toggle__");
+            const sidebar__ = document.querySelector(".sidebar__");
+            menutoggle.classList.toggle("active")
+            sidebar__.classList.toggle("active")
+        }
+    </script>
+    <script>
+        const position__ = document.documentElement;
+        position__.addEventListener("mousemove", e => {
+            position__.style.setProperty("--x", e.clientX + "px")
+            position__.style.setProperty("--y", e.clientY + "px")
+        })
+    </script>
+    <script>
+        function animateFrom(elem, direction) {
+            direction = direction || 1;
+            var x = 0,
+                y = direction * 100;
+            if (elem.classList.contains("gs_reveal_fromLeft")) {
+                x = -100;
+                y = 0;
+            } else if (elem.classList.contains("gs_reveal_fromRight")) {
+                x = 100;
+                y = 0;
+            }
+            elem.style.transform = "translate(" + x + "px, " + y + "px)";
+            elem.style.opacity = "0";
+            gsap.fromTo(elem, { x: x, y: y, autoAlpha: 0 }, {
+                duration: 1.25,
+                x: 0,
+                y: 0,
+                autoAlpha: 1,
+                ease: "expo",
+                overwrite: "auto"
+            });
+        }
+
+        function hide(elem) {
+            gsap.set(elem, { autoAlpha: 0 });
+        }
+
+        document.addEventListener("DOMContentLoaded", function () {
+            gsap.registerPlugin(ScrollTrigger);
+
+            gsap.utils.toArray(".gs_reveal").forEach(function (elem) {
+                hide(elem); // assure that the element is hidden when scrolled into view
+
+                ScrollTrigger.create({
+                    trigger: elem,
+                    onEnter: function () { animateFrom(elem) },
+                    onEnterBack: function () { animateFrom(elem, -1) },
+                    onLeave: function () { hide(elem) } // assure that the element is hidden when scrolled into view
+                });
+            });
+        });
+
+    </script>
+</body>
+
+</html>
