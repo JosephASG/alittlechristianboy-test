@@ -244,6 +244,7 @@ html {
     padding: 0 10px;
     justify-content: center;
     align-content: center;
+    margin: auto;
 }
 
 .container__3d__alpha .text__alpha p {
@@ -275,6 +276,18 @@ html {
     position: relative;
     transform-style: preserve-3d;
     transition: all 600ms;
+}
+@media screen and (max-width:450px) {
+    .card__father__alpha {
+        width: 300px;
+        height: 400px;
+    }
+    .tarjeta__3d__alpha,
+    .bg__alpha{
+        margin: auto;
+        width: 100%;
+        height: 100%;
+    }
 }
 
 /*¡Mira! Ya estoy a la puerta, y llamo. Si alguno oye mi voz y abre la puerta, yo entraré en su casa, y cenaré con él, y él cenará conmigo.*/
